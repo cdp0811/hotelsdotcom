@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotels.com</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <div class="flex">
+      <a href="#home" class="logo"><img src="images/logo.png" class="logos" alt="">Hotels.com</a>
+      <a href="#availability" class="btn">Check for Availability</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#reviews">Reviews</a>
+   </nav>
+
+</section>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-1.jpg" alt="">
+            <div class="flex">
+               <h3>Sophisticated Halls</h3>
+               <a href="#availability" class="btn">Check for Availability</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-2.jpg" alt="">
+            <div class="flex">
+               <h3>Exquisite Food and Drinks</h3>
+               <a href="#reservation" class="btn">Make a Reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-3.jpg" alt="">
+            <div class="flex">
+               <h3>Elegant Rooms</h3>
+               <a href="#contact" class="btn">Contact Us</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- availability section starts  -->
+
+<section class="availability" id="availability">
+
+   <form action="" method="post">
+      <div class="flex">
+         <div class="box">
+            <p>Check-In <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Check-Out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 Adult</option>
+               <option value="2">2 Adults</option>
+               <option value="3">3 Adults</option>
+               <option value="4">4 Adults</option>
+               <option value="5">5 Adults</option>
+               <option value="6">6 Adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Children <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">No Children</option>
+               <option value="1">1 Child</option>
+               <option value="2">2 Children</option>
+               <option value="3">3 Children</option>
+               <option value="4">4 Children</option>
+               <option value="5">5 Children</option>
+               <option value="6">6 Children</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 Room</option>
+               <option value="2">2 Rooms</option>
+               <option value="3">3 Rooms</option>
+               <option value="4">4 Rooms</option>
+               <option value="5">5 Rooms</option>
+               <option value="6">6 Rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="check availability" name="check" class="btn">
+   </form>
+
+</section>
+
+<!-- availability section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img-1.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Hotels.com</h3>
+         <p>Hotels.com gives travellers one of the widest selections of accommodation on the net, including both independent and major chain hotels as well as self-catering in over hundreds of thousands of properties worldwide. The company offers a one-stop shopping source for hotel pricing, amenities and availability.</p>
+         <a href="#reservation" class="btn">make a reservation</a>
+      </div>
+   </div>
+
+   <div class="row revers">
+      <div class="image">
+         <img src="images/about-img-2.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Mouthwatering Food</h3>
+         <p>Crafted from the best chefs from around the world, Hotels.com offers a one of a kind dining experience for our accommodations.</p>
+         <a href="#contact" class="btn">contact us</a>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img-3.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Breathtaking Swimming Pools</h3>
+         <p>Fantasy or reality? With Hotel.com, it would be indistinguishable with our world-class swimming pools.</p>
+         <a href="#availability" class="btn">check availability</a>
+      </div>
+   </div>
+
+</section>
+
+
+<section class="services">
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>Food & Drinks</h3>
+         <p>Indulge with one of the finest cuisines through our starters, main platters, desserts, and beverages.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>outdoor dining</h3>
+         <p>Immerse yourself and become one with nature through our outdoor dining areas.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>beach view</h3>
+         <p>All rooms are strategically designed to give our guests a breathtaking view of the beach.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>decorations</h3>
+         <p>Luxurious and elegant are both an understatement for the decorations designed by one of the most renowned interior-designers of the country.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>swimming pool</h3>
+         <p>Wide-varieties of swimming pools are available for our guests to satisfy different moods.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>resort beach</h3>
+         <p>The best paradise escapade around the country offers the cleanest and liveliest beach experience.</p>
+      </div>
+
+   </div>
+
+</section>
+
+
+<section class="reservation" id="reservation">
+
+   <form action="" method="post">
+      <h3>make a reservation</h3>
+      <div class="flex">
+         <div class="box">
+            <p>Check-In <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Check-Out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Number of Adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 Adult</option>
+               <option value="2">2 Adults</option>
+               <option value="3">3 Adults</option>
+               <option value="4">4 Adults</option>
+               <option value="5">5 Adults</option>
+               <option value="6">6 Adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Number of Children <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">No Children</option>
+               <option value="1">1 Child</option>
+               <option value="2">2 Children</option>
+               <option value="3">3 Children</option>
+               <option value="4">4 Children</option>
+               <option value="5">5 Children</option>
+               <option value="6">6 Children</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 Room</option>
+               <option value="2">2 Rooms</option>
+               <option value="3">3 Rooms</option>
+               <option value="4">4 Rooms</option>
+               <option value="5">5 Rooms</option>
+               <option value="6">6 Rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="make reservation" name="check" class="btn">
+   </form>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+         <img src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+   <div class="row">
+
+      <form action="" method="post">
+         <h3>Send Us a Message</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="Name" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="Email" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="Contact Number" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="Message" cols="30" rows="10"></textarea>
+         <input type="submit" value="send message" name="send" class="btn">
+      </form>
+
+      <div class="faq">
+         <h3 class="title">Frequently Asked Questions</h3>
+         <div class="box active">
+            <h3>How to cancel bookings?</h3>
+            <p>Customers will only be able to cancel bookings 3 days prior from the set date. In order to cancel, call our hotline for further assistance</p>
+         </div>
+         <div class="box">
+            <h3>Are pets allowed?</h3>
+            <p>Only pets that weigh 20 kgs or below are allowed for stay.</p>
+         </div>
+         <div class="box">
+            <h3>What payment methods are accepted?</h3>
+            <p>Both debit and credit cards may be used as well as paying cash over-the-counter.</p>
+         </div>
+         <div class="box">
+            <h3>Do you have Wi-fi?</h3>
+            <p>Hotels.com is equipped with the latest trends in technology including a 10-gigabit WiFi internet connection, available for our guests</p>
+         </div>
+         
+      </div>
+
+   </div>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+         <div class="swiper-slide box">
+            <img src="images/pic-1.png" alt="">
+            <h3>Chris Evans</h3>
+            <p>"An absolute must-visit hotel, it literally felt like a dream in a paradise!"</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-2.png" alt="">
+            <h3>Natalie White</h3>
+            <p>"Booking in this hotel is probably one of the best decisions I have made in my entire life. It is indeed a world-class service!"</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-3.png" alt="">
+            <h3>John Wick</h3>
+            <p>"What an oaisis escape! Unwinding here makes you want to live here forever!"</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-4.png" alt="">
+            <h3>Chloe Sebastian</h3>
+            <p>"If you're looking for the most accomodating hotel service, look no further and book your reservation in Hotels.com"</p>
+         </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i> +123-456-7890</a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i> +111-222-3333</a>
+         <a href="mailto:shakhanas@gmail.com"><i class="fas fa-envelope"></i> hotelsdotcom@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> Philippines - 2209</a>
+      </div>
+
+      <div class="box">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#reservation">Reservation</a>
+         <a href="#gallery">Gallery</a>
+         <a href="#contact">Contact</a>
+         <a href="#reviews">Reviews</a>
+      </div>
+
+      <div class="box">
+         <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">Twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">LinkedIn <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="credit">For Educational Purposes Only | No Copyright Infringement Intended</div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
